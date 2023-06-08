@@ -1,0 +1,22 @@
+<resources>
+    <string name="appName">AgroDetect</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="email">Enter your Email</string>
+    <string name="age">Date if Birth</string>
+    <string name="password">Enter your Password</string>
+    <string name="submit">Submit</string>
+    <string name="register">Register now</string>
+    <string name="alreadyUsing">Already Using? Login Now</string>
+
+    /!--Main--/
+    <string name="mainTitle">Welcome to the Agrodetect Grow, Share, Feed</string>
+
+
+    /!--Home--/
+    <string name="letsCalculate">Let\'s calculate your Body Mass Index now?</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="calculate">Calculate</string>
+
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="appName">AgroDetect</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="email">Enter your Email</string>
+    <string name="age">Date if Birth</string>
+    <string name="password">Enter your Password</string>
+    <string name="submit">Submit</string>
+    <string name="register">Register now</string>
+    <string name="alreadyUsing">Already Using? Login Now</string>
+    <string name="startNow">Start Now!</string>
+    /!--Main--/
+    <string name="mainTitle">Welcome to the Agrodetect Grow, Share, Feed</string>
+
+
+</resources>
