@@ -32,7 +32,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="110dp"
         android:background="@drawable/sky"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,9 +40,12 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@drawable/shape"
-            android:padding="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
@@ -51,6 +54,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish"
                 android:text="Localização"
                 android:textColor="#1E1E1E"
                 app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +62,8 @@
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="21dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -69,24 +74,120 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#FF0000" >
+                    >
 
+                    <ImageView
+                        android:id="@+id/ImgSun"
+                        android:layout_width="32dp"
+                        android:layout_height="29dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/sun" />
+
+                    <TextView
+                        android:id="@+id/txtTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulish"
+                        android:text="Temperatura"
+                        android:textColor="#1E1E1E"
+                        android:textSize="8sp"
+                        app:layout_constraintStart_toStartOf="@+id/numbTemp"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/numbTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/mulish_bold"
+                        android:text="25ºC"
+                        android:textColor="#1E1E1E"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ImgSun"
+                        app:layout_constraintTop_toBottomOf="@+id/txtTemp" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#00FF00" >
+                    >
 
+                    <ImageView
+                        android:id="@+id/ImgWater"
+                        android:layout_width="32dp"
+                        android:layout_height="29dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/water" />
+
+                    <TextView
+                        android:id="@+id/txtUmi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulish"
+                        android:text="Umidade"
+                        android:textColor="#1E1E1E"
+                        android:textSize="8sp"
+                        app:layout_constraintStart_toStartOf="@+id/numbUmi"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/numbUmi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/mulish_bold"
+                        android:text="55%"
+                        android:textColor="#1E1E1E"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ImgWater"
+                        app:layout_constraintTop_toBottomOf="@+id/txtUmi" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#FF0000" >
+                    >
 
+                    <ImageView
+                        android:id="@+id/ImgTime"
+                        android:layout_width="32dp"
+                        android:layout_height="29dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/time" />
+
+                    <TextView
+                        android:id="@+id/txtTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulish"
+                        android:text="Horário"
+                        android:textColor="#1E1E1E"
+                        android:textSize="8sp"
+                        app:layout_constraintStart_toStartOf="@+id/numbTime"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/numbTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/mulish_bold"
+                        android:text="14:46"
+                        android:textColor="#1E1E1E"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ImgTime"
+                        app:layout_constraintTop_toBottomOf="@+id/txtTemp" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 

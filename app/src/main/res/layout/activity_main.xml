@@ -54,16 +54,25 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-    <VideoView
-        android:id="@+id/videoView"
-        android:layout_width="300dp"
-        android:layout_height="157dp"
-        android:layout_marginBottom="140dp"
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="172dp"
         app:layout_constraintBottom_toTopOf="@+id/btnStartNow"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73">
+
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+
 
     <Button
         android:id="@+id/btnStartNow"
@@ -79,6 +88,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
